@@ -1,4 +1,5 @@
 # certificateCheckerScript
 
-This script makes sure certificate has valid date using check.php
-.htaccess redirect to checker
+This script will make sure your certificate is still valid then redirecting to ssl else http
+
+.htaccess redirect to php if not ssl
