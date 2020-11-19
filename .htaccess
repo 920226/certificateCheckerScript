@@ -1,5 +1,5 @@
 
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^.*$ check.php
-</IfModule>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ check.php
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
